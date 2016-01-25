@@ -35,7 +35,9 @@ TARGET_BOOTANIMATION_SIZE := 1080x608
 TARGET_NO_DSPMANAGER := true
 
 # compile SnapdragonCamera instead of Camera2
-PRODUCT_PACKAGES += SnapdragonCamera
+PRODUCT_PACKAGES += \
+  Eleven \
+  SnapdragonCamera
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
